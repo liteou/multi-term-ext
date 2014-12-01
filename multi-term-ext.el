@@ -138,7 +138,7 @@
     (format "%s" buffer-name)))
 
 (defun -multi-term-ext-next-buffer-name (&optional buffer-name)
-  (let* ((term-count        (length (multi-term-list)))
+  (let* ((term-count        (length multi-term-buffer-list))
          (current-index     nil)
          (buffer-name       (or buffer-name
                                 multi-term-buffer-name)))
